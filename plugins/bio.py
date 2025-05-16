@@ -10,19 +10,6 @@ from pyrogram.errors import UserNotMutualContact, PeerIdInvalid, ChatAdminRequir
 # Load environment variables
 load_dotenv()
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('bot.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
-
-# Bot configuration from environment variable
-
 # Map hashtags in channel description to lists of required @tags in user bio
 TAG_MAP = {
     "#movie": ["@real_pirates", "@drama_loverx"],  # #movie allows either tag
