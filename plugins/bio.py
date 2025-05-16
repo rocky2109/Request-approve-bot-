@@ -34,6 +34,8 @@ def has_required_tag_in_bio(user_bio: str, required_tags: list):
     user_bio = user_bio.lower()
     return any(tag.lower() in user_bio for tag in required_tags)
 
+
+@Client.on_chat_join_request()
 async def handle_join_request(client: Client, m: ChatJoinRequest, NEW_REQ_MODE: bool, LOG_GROUP: int):
     if not NEW_REQ_MODE:
         return
