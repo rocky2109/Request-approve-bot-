@@ -152,23 +152,3 @@ async def handle_join_request(client: Client, m: ChatJoinRequest):
 
     except Exception as e:
         logger.error(f"Error processing join request for user {m.from_user.id}: {e}")
-
-async def main():
-    """Initialize and run the Telegram bot."""
-    app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
-
-    # Register join request handler
-    app.on_chat_join_request()(handle_join_request)
-
-    try:
-        await app.start()
-        logger.info("Bot started successfully.")
-        await app.idle()  # Keep the bot running
-    except Exception as e:
-        logger.error(f"Failed to start bot: {e}")
-    finally:
-        await app.stop()
-        logger.info("Bot stopped.")
-
-if __name__ == "__main__":
-    asyncio.run(main())
