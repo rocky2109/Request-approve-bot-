@@ -4,16 +4,8 @@ from pyrogram import Client
 from pyrogram.types import ChatJoinRequest
 from pyrogram.errors import UserNotMutualContact, PeerIdInvalid
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('bot.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
 
 # Map hashtags in channel description to lists of required @tags in user bio
 TAG_MAP = {
