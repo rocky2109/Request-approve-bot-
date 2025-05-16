@@ -4,7 +4,7 @@ import asyncio
 from config import API_ID, API_HASH, BOT_TOKEN
 from pyrogram import Client
 from aiohttp import web
-
+from dotenv import load_dotenv
 # Required dependencies: pip install pyrogram aiohttp python-dotenv
 
 # Configure logging
