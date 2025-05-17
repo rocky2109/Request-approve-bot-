@@ -43,7 +43,7 @@ async def start_message(c, m):
     buttons = InlineKeyboardMarkup([
         [InlineKeyboardButton("⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇆", url="https://t.me/Music_queen_X_bot?startgroup=true&admin=invite_users")],
         [InlineKeyboardButton("• 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 •", url="https://t.me/+sQXky-6HHq8xMTk1"),
-         InlineKeyboardButton("• 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 •", url=//t.me/Movie_Pirates_x")],
+         InlineKeyboardButton("• 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 •", url="https://t.me/Movie_Pirates_x")],
         [InlineKeyboardButton("⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ⇆", url="https://t.me/Music_queen_X_bot?startchannel=true&admin=invite_users")],
     ])
 
