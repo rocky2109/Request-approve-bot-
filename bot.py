@@ -49,7 +49,7 @@ class Bot(Client):
         await super().stop()
         print('Bot Stopped Bye')
         
-@client.on_chat_join_request()
+@Client.on_chat_join_request()
 async def on_join(client, request):
     await handle_join_request(client, request)
     
