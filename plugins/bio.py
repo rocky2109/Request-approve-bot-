@@ -5,6 +5,8 @@ from pyrogram.types import ChatJoinRequest
 from pyrogram.errors import UserNotMutualContact, PeerIdInvalid
 
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
+NEW_REQ_MODE = True
 LOG_GROUP = -1002601855166
 
 # Map hashtags in channel description to lists of required @tags in user bio
