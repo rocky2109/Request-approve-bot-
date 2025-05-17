@@ -2,6 +2,12 @@ import os
 from pyrogram import Client
 from aiohttp import web
 from config import API_ID, API_HASH, BOT_TOKEN
+from bio import handle_join_request
+
+@Client.on_chat_join_request()
+async def join_request_event(client, m):
+    await handle_join_request(client, m)
+
 
 r = web.RouteTableDef()
 
