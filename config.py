@@ -11,3 +11,4 @@ DB_NAME = environ.get("DB_NAME", "autoacceptbot")
 NEW_REQ_MODE = bool(environ.get('NEW_REQ_MODE', True))
 IS_FSUB = bool(environ.get("FSUB", True)) # Set "True" For Enable Force Subscribe
 AUTH_CHANNELS = list(map(int, environ.get("AUTH_CHANNEL", "").split())) # Add Multiple channel id
+LOG_GROUP = int(environ.get("LOG_GROUP", "0"))
