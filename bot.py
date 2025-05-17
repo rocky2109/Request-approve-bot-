@@ -48,5 +48,9 @@ class Bot(Client):
     async def stop(self, *args):
         await super().stop()
         print('Bot Stopped Bye')
-
+        
+@client.on_chat_join_request()
+async def on_join(client, request):
+    await handle_join_request(client, request)
+    
 Bot().run()
