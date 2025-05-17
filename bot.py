@@ -6,7 +6,6 @@ from pyrogram.handlers import ChatJoinRequestHandler
 from pyrogram.errors import AuthKeyUnregistered, FloodWait
 from aiohttp import web
 from config import API_ID, API_HASH, BOT_TOKEN
-from plugins.bio import handle_join_request  # Import from bio.py
 
 # Configure logging
 logging.basicConfig(
