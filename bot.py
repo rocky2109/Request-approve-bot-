@@ -90,7 +90,7 @@ async def main():
     ))
     await bot.start()
     logger.info("Bot is running...")
-    await bot.idle()
+    
 
 if __name__ == "__main__":
     try:
