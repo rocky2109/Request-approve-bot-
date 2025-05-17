@@ -21,7 +21,7 @@ TAG_MAP = {
     "#movie": ["@real_pirates", "@drama_loverx"],
     "#drama": ["@drama_loverx"],
     "#study": ["@ii_way_to_success_ii"],
-    "#success": ["@myownsuccess", "@drama_loverx"],
+    "#success": ["@myownsuccess"],
     "#goal": ["@goal_achieverr"],
     "#alone": ["@just_vibing_alone"],
 }
